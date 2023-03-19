@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from "react";
-import {ICourse, ICoursesFetchResponse} from "../../types/types";
+import {ICourse} from "../../types/types";
 import {fetchCourses, fetchToken} from "./fetch";
 import PreviewCourses from "./Preview-Courses";
 import style from "./Page-courses.module.scss"

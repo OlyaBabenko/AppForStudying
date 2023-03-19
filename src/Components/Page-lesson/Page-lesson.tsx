@@ -8,10 +8,6 @@ const parseData = (data: ILessons) => {
     let lessons = data.lessons.map(value => value.title)
     let skills = data.meta?.skills?.map(value => value)
     let date = new Date (data.launchDate)
-    console.log(data)
-    console.log(date.getHours()+":"+ date.getMinutes()+" "+ date.getDate()+" "+date.getMonth()+" "+date.getFullYear())
-    console.log("lessons = " +lessons)
-    console.log("skills = " +skills)
 }
 
 const PageLesson = () => {

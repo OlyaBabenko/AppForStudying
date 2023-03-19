@@ -6,21 +6,9 @@ import {useNavigate} from "react-router-dom";
 type DataProps = {
     data: ICourse
 }
-// type SkillProps = {
-//     sk: string
-// }
-// const Skill = (props: SkillProps) => {
-//     console.log(props.sk)
-//     return (
-//         <li>{props.sk}</li>
-//     )
-// }
+
 const PreviewCourses = (props: DataProps) => {
-//     let skill = props.data.meta.skills.map((sk) =>
-//         console.log(sk);
-//         <div>{sk}</div>
-//     )
-    // console.log(skill)
+
     const navigate = useNavigate()
     const showLesson = () => {
         navigate(`/course/${props.data.id}`)
@@ -43,12 +31,6 @@ const PreviewCourses = (props: DataProps) => {
                 <h3 className={style.tittle}>{props.data.title}</h3>
                 <div>
                     <h4 className={style.skillsTittle}>Skills</h4>
-                    <div>
-                        <ul>
-                            {/*{skill}*/}
-                        </ul>
-
-                    </div>
                 </div>
             </div>
 
