@@ -1,0 +1,40 @@
+.previewCourses {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+.previewCourses:hover {
+  background-color: #eee434;
+}
+.previewCourses .leftBlock {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.previewCourses .leftBlock .image {
+  width: 100%;
+  height: auto;
+}
+.previewCourses .leftBlock .BlockRatingLessons {
+  display: flex;
+  justify-content: space-around;
+}
+.previewCourses .rightBlock {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.previewCourses .rightBlock .tittle {
+  font-size: 25px;
+}
+.previewCourses .rightBlock .skillsTittle {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=Preview-Courses.module.css.map */

@@ -1,0 +1,47 @@
+.previewCourses {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  //gap: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eee434;
+  }
+
+  .leftBlock {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .image {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .BlockRatingLessons {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .rightBlock {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .tittle {
+      font-size: 25px;
+    }
+
+    .skillsTittle {
+      font-size: 20px;
+    }
+  }
+}

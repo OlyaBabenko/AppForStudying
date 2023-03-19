@@ -1,0 +1,24 @@
+.pageCourses {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageCourses .welcomeBlock {
+  width: 80%;
+}
+.pageCourses .welcomeBlock .welcomeText {
+  text-indent: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+.pageCourses .itemCourses {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/*# sourceMappingURL=Page-courses.module.css.map */
