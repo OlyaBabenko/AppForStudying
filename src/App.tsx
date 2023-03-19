@@ -8,7 +8,7 @@ import PageLesson from "./Components/Page-lesson/Page-lesson";
 function App() {
     const router = createBrowserRouter([
         {
-            path: "/",
+            path: "/AppForStudying/",
             element: <PageCourses/>
         },
         {
