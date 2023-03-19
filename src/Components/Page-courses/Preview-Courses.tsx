@@ -1,6 +1,7 @@
 import React from "react";
 import {ICourse} from "../../types/types";
 import style from "./Preview-Courses.module.scss"
+import {useNavigate} from "react-router-dom";
 
 type DataProps = {
     data: ICourse
@@ -20,9 +21,13 @@ const PreviewCourses = (props: DataProps) => {
 //         <div>{sk}</div>
 //     )
     // console.log(skill)
-
+    const navigate = useNavigate()
+    const showLesson = () => {
+        navigate(`/course/${props.data.id}`)
+    }
+    console.log("video = " + props.data.meta.courseVideoPreview)
     return (
-        <div className={style.previewCourses}>
+        <div className={style.previewCourses} onClick={() => showLesson()}>
             <div className={style.leftBlock}>
                 <img src={props.data.previewImageLink + '/cover.webp'} alt="image course" className={style.image}/>
                 <div className={style.BlockRatingLessons}>

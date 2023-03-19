@@ -23,3 +23,15 @@ export const fetchCourses = (token: string) => {
         .then((value: ICoursesFetchResponse) => value.courses)
         .catch(error => console.log('error', error));
 }
+
+export const fetchLesson = (token:string, courseId?: string) => {
+    const requestOptions = {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + token
+        }
+    };
+    return fetch("https://api.wisey.app/api/v1/core/preview-courses/"+courseId, requestOptions)
+        .then(response => response.json())
+        .catch(error => console.log('error', error));
+}

@@ -3,14 +3,13 @@ import {ICourse, ICoursesFetchResponse} from "../../types/types";
 import {fetchCourses, fetchToken} from "./fetch";
 import PreviewCourses from "./Preview-Courses";
 import style from "./Page-courses.module.scss"
-import {isMainThread} from "worker_threads";
 
 
 const PageCourses: FC = () => {
     const [courses, setCourses] = useState<ICourse[]>([]);
 
     useEffect(() => {
-            const token = fetchToken()
+            fetchToken()
                 .then((token)=> fetchCourses(token))
                 .then(courses => {if(courses) setCourses(courses)});
         }, []
